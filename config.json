@@ -1,0 +1,10 @@
+{
+    "owner": "unspecified",
+    "size_limit": 50000000,
+    "login_info": {
+        "url": "FILL_ME",
+        "client_id": "FILL_ME",
+        "client_secret": "FILL_ME",
+        "redirect_uri": "FILL_ME"
+    }
+}
