@@ -13,4 +13,4 @@ UpCord is meant to be a file sharing service that you can host yourself for you 
 * * redirect_uri - The URI you specify under the "OAuth2" tab. If you haven't touched anything, it should be https://example.com/login/process.php (example.com being replaced by your own domain of course)
 
 # whitelist.json
-This is a whitelist that determines who can access your instance. An example is included.
+This is a whitelist that determines who can upload files to your instance. An example is included.
