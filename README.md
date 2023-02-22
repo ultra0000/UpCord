@@ -10,7 +10,7 @@ UpCord is meant to be a file sharing service that you can host yourself for you 
 * * url - URL you get from the OAuth2 URL Generator
 * * client_id - Your app's client ID. It's under the "OAuth2" tab.
 * * client_secret - Your app's client secret. It's under the "OAuth2" tab.
-* * redirect_uri - The URI you specify under the "OAuth2" tab. If you haven't touched anything, it should be https://<YOUR DOMAIN HERE>/login/process.php
+* * redirect_uri - The URI you specify under the "OAuth2" tab. If you haven't touched anything, it should be https://example.com/login/process.php (example.com being replaced by your own domain of course)
 
 # whitelist.json
 This is a whitelist that determines who can access your instance. An example is included.
