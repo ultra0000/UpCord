@@ -1,7 +1,7 @@
 # UpCord
 UpCord is meant to be a file sharing service that you can host yourself for you and your friends. It uses Discord as authentication. It's meant to run on Apache.
 
-[https://discord.com/developers/applications](Create an app here first.)
+[Create an app here first.](https://discord.com/developers/applications)
 
 # config.json
 * owner - Owner of the instance, it's displayed in the home page. You can leave this as "unspecified" if you don't want to show that.
