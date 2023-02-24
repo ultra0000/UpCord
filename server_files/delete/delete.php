@@ -12,10 +12,10 @@ $target_file = "../files/" . $discord_id . "/" . $_POST['filename'];
 
 if (isset($_POST["submit"])) {
   if (!file_exists($target_file)) {
-    exit("Error: File doesn't exist.");
+    exit("<h1>Error: File doesn't exist.</h1>\n<br><a href=\"/delete/\">Go back to delete page</a>\n<br><a href=\"/list/\">Go back to file list</a>");
   }
 
   unlink($target_file);
-  exit("File deleted.");
+  exit("<h1>File deleted.</h1>\n<br><a href=\"/delete/\">Go back to delete page</a>\n<br><a href=\"/list/\">Go back to file list</a>");
 }
 ?>

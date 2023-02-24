@@ -25,5 +25,7 @@ extract($_SESSION['userData']);
             <input type="text" id="filename" name="filename"><br><br>
             <input type="submit" value="Delete" name="submit">
         </form>
+        <br>
+        <a href="/list/">Go back to file list</a>
     </body>
 </html>

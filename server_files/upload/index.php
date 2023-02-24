@@ -24,5 +24,7 @@ extract($_SESSION['userData']);
             <input type="file" name="fileToUpload" id="fileToUpload">
             <input type="submit" value="Upload File" name="submit">
         </form>
+        <br>
+        <a href="/list/">Go back to file list</a>
     </body>
 </html>

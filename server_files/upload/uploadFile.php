@@ -16,22 +16,22 @@ $fileSize = $_FILES['fileToUpload']['size'];
 if (isset($_POST["submit"])) {
   if (basename($_FILES["fileToUpload"]["name"]) == ".htaccess")
   {
-    exit("Error: tf you doing bro");
+    exit("<h1>Error: tf you doing bro</h1>\n<br><a href=\"/upload/\">Go back to upload page</a>\n<br><a href=\"/list/\">Go back to file list</a>");
   }
 
   if (file_exists($target_file)) {
-    exit("Error: File already exists");
+    exit("<h1>Error: File already exists</h1>\n<br><a href=\"/upload/\">Go back to upload page</a>\n<br><a href=\"/list/\">Go back to file list</a>");
   }
 
   if ($fileSize > $config["size_limit"])
   {
-    exit("Error: File too big, limit is " . $config["size_limit"] . " bytes");
+    exit("<h1>Error: File too big, limit is " . $config["size_limit"] . " bytes</h1>\n<br><a href=\"/upload/\">Go back to upload page</a>\n<br><a href=\"/list/\">Go back to file list</a>");
   }
 
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-    echo "Success";
+    echo "<h1>Success</h1>\n<br><a href=\"/upload/\">Go back to upload page</a>\n<br><a href=\"/list/\">Go back to file list</a>";
   } else {
-    echo "Error: Failed to upload because of error #" . $_FILES["fileToUpload"]["error"];
+    echo "<h1>Error: Failed to upload because of error #" . $_FILES["fileToUpload"]["error"] . "</h1>\n<br><a href=\"/upload/\">Go back to upload page</a>\n<br><a href=\"/list/\">Go back to file list</a>";
   }
 }
 ?>
