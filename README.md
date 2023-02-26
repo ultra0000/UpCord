@@ -4,7 +4,7 @@ UpCord is meant to be a file sharing service that you can host yourself for you 
 [Create an app here first.](https://discord.com/developers/applications)
 
 # config.json
-* owner - Owner of the instance, it's displayed in the home page. You can leave this as "unspecified" if you don't want to show that.
+* owner - Owner of the instance, it's displayed in the home page. You can set this to "unspecified" if you don't want to show it.
 * size_limit - File size limit in bytes. Default is 50000000
 * login_info - Information used to authenticate with Discord.
 * * url - URL you get from the OAuth2 URL Generator
