@@ -32,7 +32,11 @@ else
             {
                 echo "<p>This instance is hosted by " . $config["owner"] . "</p>\n";
             }
-            echo "<p>File size limit is of " . $config["size_limit"] . " bytes</p>";
+            echo "<p>File size limit is of " . $config["size_limit"] . " bytes</p>\n";
+            if ($config["additional_info"] != "unspecified")
+            {
+                echo "<p>Additional information:</p>----------------------------------------<br>\n" . $config["additional_info"] . "\n";
+            }
         ?>
     </body>
 </html>
